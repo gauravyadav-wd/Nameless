@@ -1,0 +1,41 @@
+extends base
+
+mixin userbox(username,text,photo)
+    .user
+        img(src=`/${photo}` alt='user photo' height='50')
+        p=username
+        p=text
+
+block content
+    main.main
+        h1.ques-heading Question
+        .questionDetails
+            .questionBox
+                +userbox('username',question.question, 'img/favicon.png')
+                p upvotes
+        h1.ans-heading Answers(#{question.answers.length})
+        .answers
+            .ansBoxes
+                each answer in question.answers
+                    .ansBox
+                        +userbox(answer.user.username,answer.answer ,answer.user.photo)
+                        .date-upvotes.flex-sb
+                            p= answer.createdAt.toLocaleString('en-IN')
+                            | &nbsp
+                            p= answer.upvotes
+            .writeAnswer
+                label.label(for='answer') write your answer
+                input#answer(type='text')
+        h1.com-heading Comments(#{question.comments.length})
+        .comments
+            .commentBoxes
+                each comment in question.comments
+                    .commentBox
+                        +userbox(comment.user.username,comment.comment ,comment.user.photo)
+                        .date-upvotes.flex-sb
+                            p= comment.createdAt.toLocaleString('en-IN')
+                            | &nbsp
+                            p= comment.upvotes
+            .writeComment
+                label.label(for='comment') write your comment
+                input#comment(type='text')

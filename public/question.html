@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nameless App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="ques-heading"><a>All Questions</a></div>
+        <div class="logo">
+          <img src="./img/favicon.png" alt="site logo" height="50" />
+        </div>
+        <div class="auth-buttons">
+          <a class="login">Log in</a> <a class="signup">Sign up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="ques-heading">Question</h1>
+      <div class="questionDetails">
+        <div class="questionBox">
+          <div class="user">
+            <img src="./img/favicon.png" alt="user photo" height="50" />
+            <p>user name</p>
+            <p>What is Nameless App?</p>
+          </div>
+
+          <p>upvotes</p>
+        </div>
+
+        <h1 class="ans-heading">Answers(20)</h1>
+        <div class="answers">
+          <div class="ansBoxes">
+            <div class="ansBox">
+              <div class="user">
+                <img src="./img/favicon.png" alt="user photo" height="50" />
+                <p>user name</p>
+                <p>An app</p>
+              </div>
+              <p>upvotes</p>
+            </div>
+
+            <div class="ansBox">
+              <div class="user">
+                <img src="./img/favicon.png" alt="user photo" height="50" />
+                <p>user name</p>
+                <p>An app</p>
+              </div>
+              <p>upvotes</p>
+            </div>
+          </div>
+          <div class="writeAnswer">
+            <label class="label" for="answer">write your answer</label>
+            <input type="text" id="answer" />
+          </div>
+        </div>
+
+        <h1 class="com-heading">Comments(20)</h1>
+        <div class="comments">
+          <div class="commentBoxes">
+            <div class="commentBox">
+              <div class="user">
+                <img src="./img/favicon.png" alt="user photo" height="50" />
+                <p>user name</p>
+                <p>An app <span class="comDate">Date</span></p>
+              </div>
+              <p>upvotes</p>
+            </div>
+
+            <div class="commentBox">
+              <div class="user">
+                <img src="./img/favicon.png" alt="user photo" height="50" />
+                <p>user name</p>
+                <p>An app <span class="comDate">Date</span></p>
+              </div>
+              <p>upvotes</p>
+            </div>
+          </div>
+          <div class="writeComment">
+            <label class="label" for="comment">write your comment</label>
+            <input type="text" id="comment" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

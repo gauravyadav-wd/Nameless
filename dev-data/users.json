@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Gaurav Yadav",
+    "email": "gauravyadav.signin@gmail.com",
+    "role": "admin",
+    "active": "true",
+    "photo": "img/gaurav.jpg",
+    "password": "test1234"
+  },
+  {
+    "id": 2,
+    "name": "Mayank Chaudhary",
+    "email": "mayankchaudhary59@gmail.com",
+    "role": "user",
+    "active": "true",
+    "photo": "img/mayank.jpg",
+    "password": "test1234"
+  },
+  {
+    "id": 3,
+    "name": "Raman Dubey",
+    "email": "ramandubey@gmail.com",
+    "role": "user",
+    "active": "true",
+    "photo": "img/raman.jpg",
+    "password": "test1234"
+  },
+  {
+    "id": 4,
+    "name": "Chaman Singh",
+    "email": "chamansingh@gmail.com",
+    "role": "user",
+    "active": "true",
+    "photo": "img/chaman.jpg",
+    "password": "test1234"
+  }
+]

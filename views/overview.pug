@@ -1,0 +1,21 @@
+extends base
+
+block content
+    main.main
+        .quesContainer
+            each question in questions
+                .quesBox
+                    .postedbyCon.flex-sb
+                        p.postedby Posted by gaurav yadav 
+                        -const date = question.date.toLocaleString('en-IN')
+                        p.date=date
+                    p.ques=question.question
+                    .ansOptions.flex-sb
+                        //- p.ans Answer:An app
+                        a #{question.NOfAnswers} Answers &gt;
+                    .boxOptions.flex-sb
+                        .opt1.flex-sb
+                            p.upvotes=question.upvotes
+                            p.category=question.category
+                        .btnShowMore.flex-sb
+                            a(href=`question/${question.slug}`)  Show More

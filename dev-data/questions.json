@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "question": "What is Nameless App?",
+    "answer": "Nameless is an anonymous app where you can ask questions",
+    "comments": {
+      "Gaurav": "I have created this app",
+      "Mayank": "I have been supporting this app"
+    },
+    "category": "General",
+    "date": "19-04-2023",
+    "upvotes": "1528"
+  },
+  {
+    "id": 2,
+    "question": "Do You Like This App?",
+    "answer": "Yes, this app is amazing , let us ask questions anonymously",
+    "comments": {
+      "Raman": "Let me try it",
+      "Chaman": "I just downloaded it"
+    },
+    "category": "General",
+    "date": "19-04-2023",
+    "upvotes": "1255"
+  }
+]

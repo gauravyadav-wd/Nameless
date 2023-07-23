@@ -1,0 +1,21 @@
+extends base
+
+block style
+    link(rel='stylesheet' href='/css/login.css')
+    link(rel='stylesheet' href='/css/style.css')
+    
+
+
+block content
+    .login-form
+        form.loginform
+            h1 Login
+            .content
+                .input-field
+                    input(type='email' placeholder='Email' autocomplete='nope'  class='email' required)
+                .input-field
+                    input(type='password' placeholder='Password' class='password' required)
+                a.link(href='#') Forgot Your Password?
+            .action
+                //- a Register
+                button.signin Sign in

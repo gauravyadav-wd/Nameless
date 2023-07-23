@@ -1,0 +1,15 @@
+header
+  nav.nav
+    .ques-heading
+      a(href='/') All Questions
+    .logo
+      img(src='/img/favicon.png' alt='site logo' height='50')
+    .auth-buttons
+      if user
+        a(href='/logout').logout Log out
+        a(href='/account').account
+          h1= user.username.split(' ')[0]
+          | &nbsp&nbsp&nbsp
+          img(src=`/${user.photo}` alt='site logo' height='50')
+      else
+        a(href='/login').login Log in / Sign up
